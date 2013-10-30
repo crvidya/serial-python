@@ -155,7 +155,7 @@ class DelimitedReader(_TabularReader):
     position of an array field is the pair [beg, end).
 
     """
-    def __init__(self, stream, fields, delim=None):
+    def __init__(self, stream, fields, delim=None, endl="\n"):
         """ Initialize this object.
 
         The default delimiter will parse lines delimited by any whitespace. At
@@ -231,6 +231,7 @@ class ReaderSequence(_Reader):
             except StopIteration:
                 # The current stream is exhausted, try the next one. 
                 self._open()
+        return
         
     def _open(self):
         """ Open the next stream in the sequence.
