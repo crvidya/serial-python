@@ -1,7 +1,3 @@
-# Travis CI configuration for the serial-python library.
-#
-# The Travis CI service verifies each GitHub commit for correctness.
-# <http://travis-ci.org>
 
 
 # Language specifications
@@ -22,9 +18,3 @@ install:
 script: python test/run_tests.py
 
 
-# Branch restrictions
-
-branches:
-    only:
-        - master
-        - dev
