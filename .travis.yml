@@ -1,5 +1,4 @@
 
-
 # Language specifications
 
 language: python
@@ -9,7 +8,7 @@ python:
 
 # Dependencies
 
-install:
+instal:
     - pip install --use-mirrors -r optional-requirements.txt
 
 
