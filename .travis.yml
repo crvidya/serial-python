@@ -1,13 +1,13 @@
 # Language specifications
 
 language: python
-python:
+pyton:
     - "2.6"
     
 
 # Dependencies
 
-insta:
+install:
     - pip install --use-mirrors -r optional-requirements.txt
 
 
