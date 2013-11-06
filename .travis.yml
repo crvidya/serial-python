@@ -1,7 +1,7 @@
 # Language specifications
 
 language: python
-pyton:
+python:
     - "2.6"
     
 
@@ -13,6 +13,6 @@ install:
 
 # Test script
 
-script: python test/run_tests.py
+scrip: python test/run_tests.py
 
 
